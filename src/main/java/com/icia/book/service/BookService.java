@@ -20,5 +20,8 @@ public class BookService {
     }
 
 
-
+    public BookDTO findBook() {
+        BookDTO findResult = bookRepository.findBook();
+        return findResult;
+    }
 }
